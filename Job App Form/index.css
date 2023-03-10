@@ -1,0 +1,11 @@
+span{
+    color: red;
+    display: none;
+}
+.email_input:invalid + span{
+    display: block;
+
+}
+.pass_input:invalid + span{
+    display: block;
+}
