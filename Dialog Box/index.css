@@ -16,6 +16,7 @@ body{
     position:fixed;
     top:200px;
     left:300px;
+    box-shadow: 10px 10px rgb(51, 51, 51);
 }
 .first{
     margin: 0px;
