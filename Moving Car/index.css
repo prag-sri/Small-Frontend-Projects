@@ -1,0 +1,46 @@
+#bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}  
+#car{
+    width: 250px;
+    height: 130px;
+    position: absolute;
+}
+#wheel1, #wheel2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 70px;
+}
+#wheel1{
+    left: 20px;
+}
+#wheel2{
+    left: 170px;
+}
+#wheel1, #wheel2{
+    animation: wheel_move 700ms linear infinite;
+}
+@keyframes wheel_move{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.car{
+    animation: car_move 3s linear infinite;
+    position: absolute;
+    top: 350px;
+}
+@keyframes car_move{
+    0%{
+        transform: translateX(0px) translateY(0px);
+    }
+    100%{
+        transform: translateX(1000px) translateY(0px);
+    }
+}
