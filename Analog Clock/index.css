@@ -1,0 +1,50 @@
+.clock{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.center{
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 140px;
+    left: 622px;
+}
+#face{
+    height: 300px;
+    position: relative;
+}
+#hr{
+    height:89px;
+    position: absolute;
+    top: 68px;
+    left: 596px;
+    animation: hr_move 6400ms infinite linear;
+    transform-origin: bottom;
+}
+#min{
+    height:150px;
+    position: absolute;
+    top: 10px;
+    left: 565px;
+    animation: min_move 3s infinite linear;
+    transform-origin: bottom;
+}
+@keyframes hr_move{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes min_move{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
